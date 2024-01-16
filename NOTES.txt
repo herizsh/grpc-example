@@ -12,3 +12,9 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 protoc --go_out=. --go-grpc_out=. greet/greetpb/greet.proto
 
 
+Python Notes:
+1. Select Python Version
+2. Virtualenv
+3. install grpcio grpc_tools
+4. generate proto files
+python -m grpc_tools.protoc --proto_path=./helloworld/helloworldpb --python_out=. --grpc_python_out=. ./helloworld/helloworldpb/helloworld.proto
